@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>MUSIC PLAYER</title>
+    <link rel="stylesheet" href="mm.css">
+</head>
+
+<body bgcolor="black">
+    <section class="container">
+
+        <div class="section_1">
+            <header class="header">
+                <p> MUSIFY</p>
+            </header>
+            <div class="audios">
+
+                <div class="audio">
+                    <div class="audio_img">
+                        <img src="https://m.media-amazon.com/images/M/MV5BMmY4OTk1MTctYTM1My00Y2IyLWJlMmUtNzUyOThhYzM4YmNkXkEyXkFqcGdeQXVyNjA0MTQ0MjI@._V1_.jpg" alt=" ">
+
+                    </div>
+                    <div class="audio_detail ">
+                        <h1 class="audio_title "> aarya </h1>
+                        <button class="btn " onclick="playAudio(1)"> play</button>
+                    </div>
+                </div>
+
+                <div class="audio ">
+                    <div class="audio_img ">
+                        <img src="https://naasongsnew.com/wp-content/uploads/2020/06/Radhe-Shyam-naa-songs.jpg" alt=" ">
+
+                    </div>
+                    <div class="audio_detail ">
+                        <h1 class="audio_title "> Radhe-Shyam </h1>
+                        <button class="btn " onclick="playAudio(2)"> play</button>
+                    </div>
+                </div>
+
+                <div class="audio ">
+                    <div class="audio_img ">
+                        <img src="https://upload.wikimedia.org/wikipedia/en/2/29/Ismart_Shankar_poster.jpg " alt=" ">
+                    </div>
+                    <div class="audio_detail ">
+                        <h1 class="audio_title "> Ismart_Shankar </h1>
+                        <button class="btn " onclick="playAudio(3)"> play</button>
+                    </div>
+                </div>
+                <div class="audio ">
+                    <div class="audio_img ">
+                        <img src="https://m.media-amazon.com/images/M/MV5BMDJkOTE5ZmUtZjgzMC00YTMwLThmOWMtZmJkNWM5ZWZkYmY2XkEyXkFqcGdeQXVyMjA1MTA3MjY@._V1_.jpg" alt=" ">
+                    </div>
+                    <div class="audio_detail ">
+                        <h1 class="audio_title ">Bangarraju</h1>
+                        <button class="btn " onclick="playAudio(4)"> play</button>
+                    </div>
+                </div>
+                <div class="audio ">
+                    <div class="audio_img ">
+                        <img src="https://m.media-amazon.com/images/M/MV5BMWU0MWIyZWUtMTMxZS00N2VlLWFkZTktMTEzYjUwYTU1ZTE0XkEyXkFqcGdeQXVyNTg2MjY3ODg@._V1_.jpg" alt=" ">
+                    </div>
+                    <div class="audio_detail ">
+                        <h1 class="audio_title "> Temper</h1>
+                        <button class="btn " onclick="playAudio(5)"> play</button>
+                    </div>
+                </div>
+                <div class="audio ">
+                    <div class="audio_img ">
+                        <img src="https://boxofficecollection.in/wp-content/uploads/2015/04/Son-of-Satyamurthy-movie1.jpg" alt=" ">
+                    </div>
+                    <div class="audio_detail ">
+                        <h1 class="audio_title ">s/o satyamurthy</h1>
+                        <button class="btn " onclick="playAudio(6)"> play</button>
+                    </div>
+                </div>
+                <div class="audio ">
+                    <div class="audio_img ">
+                        <img src="https://upload.wikimedia.org/wikipedia/en/d/dc/Orange_poster.jpg" alt=" ">
+                    </div>
+                    <div class="audio_detail ">
+                        <h1 class="audio_title "> Orange</h1>
+                        <button class="btn " onclick="playAudio(7)"> play</button>
+                    </div>
+                </div>
+                <div class="audio ">
+                    <div class="audio_img ">
+                        <img src="https://upload.wikimedia.org/wikipedia/en/f/fd/Attarintiki_Daredi.jpg" alt=" ">
+                    </div>
+                    <div class="audio_detail ">
+                        <h1 class="audio_title ">Attarintiki Daredi</h1>
+                        <button class="btn " onclick="playAudio(8)"> play</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="section_2 ">
+            <div class="thumbnail ">
+                <div class="aud_img">
+                    <img id="thumbnail" src="https://m.media-amazon.com/images/M/MV5BMDJkOTE5ZmUtZjgzMC00YTMwLThmOWMtZmJkNWM5ZWZkYmY2XkEyXkFqcGdeQXVyMjA1MTA3MjY@._V1_.jpg" alt=" ">
+                </div>
+            </div>
+
+            <audio id="audio_player" class="audio_player" src="./song/[iSongs.info] 03 - Vaasivaadi Tassadiyya.mp3" controls>
+
+            </audio>
+            <h1 class="audio_player_title" id="audio_player_title">Bangarraju</h1>
+
+
+        </div>
+    </section>
+    <script>
+        var songs = [
+
+            {
+                id: 1,
+                imageSrc: "https://m.media-amazon.com/images/M/MV5BMmY4OTk1MTctYTM1My00Y2IyLWJlMmUtNzUyOThhYzM4YmNkXkEyXkFqcGdeQXVyNjA0MTQ0MjI@._V1_.jpg",
+                audiosrc: "./song/[iSongs.info] 02 - Uppenantha.mp3",
+                title: "aarya"
+            },
+
+            {
+                id: 2,
+                imageSrc: "https://naasongsnew.com/wp-content/uploads/2020/06/Radhe-Shyam-naa-songs.jpg",
+                audiosrc: "./song/Nagumomu Thaarale.mp3",
+                title: "radha_shyam"
+            },
+
+            {
+                id: 3,
+                imageSrc: "https://upload.wikimedia.org/wikipedia/en/2/29/Ismart_Shankar_poster.jpg",
+                audiosrc: "./song/Undipo - SenSongsMp3.Co.mp3",
+                title: "ismart_shankar"
+            },
+
+            {
+                id: 4,
+                imageSrc: "https://m.media-amazon.com/images/M/MV5BMDJkOTE5ZmUtZjgzMC00YTMwLThmOWMtZmJkNWM5ZWZkYmY2XkEyXkFqcGdeQXVyMjA1MTA3MjY@._V1_.jpg",
+                audiosrc: "./song/[iSongs.info] 03 - Vaasivaadi Tassadiyya.mp3",
+                title: "Bangarraju"
+            },
+
+            {
+                id: 5,
+                imageSrc: "https://m.media-amazon.com/images/M/MV5BMWU0MWIyZWUtMTMxZS00N2VlLWFkZTktMTEzYjUwYTU1ZTE0XkEyXkFqcGdeQXVyNTg2MjY3ODg@._V1_.jpg",
+                audiosrc: "./song/[iSongs.info] 02 - Temper.mp3",
+                title: " Temper"
+            },
+
+            {
+                id: 6,
+                imageSrc: "https://boxofficecollection.in/wp-content/uploads/2015/04/Son-of-Satyamurthy-movie1.jpg",
+                audiosrc: "./song/Seethakaalam - SenSongsMp3.Co.mp3",
+                title: "s/o satyamurthy"
+            },
+
+            {
+                id: 7,
+                imageSrc: "https://upload.wikimedia.org/wikipedia/en/d/dc/Orange_poster.jpg",
+                audiosrc: "./song/[iSongs.info] 03 - Nenu Nuvvantu.mp3",
+                title: "Orange"
+            },
+
+            {
+                id: 8,
+                imageSrc: "https://upload.wikimedia.org/wikipedia/en/f/fd/Attarintiki_Daredi.jpg",
+                audiosrc: "./song/[iSongs.info] Ninnu Chudagaane.mp3",
+                title: "Attarintiki Daredi"
+            }
+        ]
+
+        function playAudio(songid) {
+            var song = songs.find(function(song, index) {
+                return song.id === songid
+            });
+            document.getElementById("thumbnail").src = song.imageSrc;
+            document.getElementById("audio_player").src = song.audiosrc;
+            document.getElementById("audio_player_title").innerText = song.title;
+            document.getElementById("audio_player").play();
+
+        }
+    </script>
+
+
+</body>
+
+</html>

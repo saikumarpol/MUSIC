@@ -1,0 +1,142 @@
+.container {
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    background-repeat: repeat-y;
+}
+
+.section_1 {
+    width: 80%;
+    height: 100vh;
+    /*background-color: red;*/
+}
+
+.header {
+    height: 100px;
+    /* background-color: darkgoldenrod;*/
+    display: flex;
+    align-items: center;
+    font: 100px;
+    font-family: Segoe UI;
+    font-weight: bold;
+    padding-left: 50px;
+    color: coral;
+}
+
+.audios {
+    height: 500px;
+    /* background-color: grey;*/
+    padding-left: 50px;
+    padding-top: 30px;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    overflow: scroll;
+    column-gap: calc(4%/3);
+    row-gap: 10px;
+}
+
+.audio {
+    height: auto;
+    background-image: linear-gradient(to right, black, white);
+    min-height: 470px;
+    width: 24%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.audio_img {
+    width: 100%;
+    height: 300px;
+    /*background-color: yellow;*/
+    overflow: hidden;
+}
+
+.audio_img>img {
+    width: 100%;
+}
+
+.audio_detail {
+    padding: 20px;
+}
+
+.audio_title {
+    font-family: segoe UI;
+    color: white;
+}
+
+.btn {
+    padding: 10px 50px;
+    margin-top: 20px;
+    border: 2px solid white;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: black;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.btn:hover {
+    background-color: red;
+    border: 2px solid red;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: white;
+    border-radius: 5px;
+}
+
+.section_2 {
+    margin-right: 0%;
+    padding: 50px;
+    background-color: rgb(10, 131, 64);
+    float: right;
+    height: auto;
+    min-height: 470px;
+    width: 24%;
+    border-radius: 10px;
+}
+
+.aud_img {
+    width: 100%;
+    height: 100%;
+    /*background-color: yellow;*/
+    overflow: hidden;
+}
+
+.aud_img>img {
+    margin-left: 40%;
+    width: 200px;
+    height: 300px;
+}
+
+.thumbnail {
+    width: 100%;
+    height: 400px;
+    /*background-color: aqua;*/
+    padding: 50px;
+    overflow: hidden;
+    float: right;
+    border-radius: 10px;
+}
+
+.audio_player {
+    width: 100%;
+}
+
+.title {
+    font-family: Segoe UI;
+    color: white;
+    font-size: 40px;
+}
+
+audio::-webkit-media-controls-panel {
+    background-color: skyblue;
+}
